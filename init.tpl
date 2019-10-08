@@ -10,7 +10,7 @@ chown -R ec2-user:ec2-user /home/ec2-user/venv/
 source /home/ec2-user/venv/ec2-user/bin/activate
 
 mkdir /home/ec2-user/luigi
-cd /home/ec2-user/luigi:
+cd /home/ec2-user/luigi
 git init
 git pull https://github.com/spotify/luigi.git
 chown -R ec2-user:ec2-user /home/ec2-user/luigi/
