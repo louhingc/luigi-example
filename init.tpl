@@ -21,5 +21,5 @@ chown -R ec2-user:ec2-user /home/ec2-user/luigi/
 su ec2-user -c "/home/ec2-user/venv/ec2-user/bin/luigid &"
 cd /home/ec2-user/luigi/examples
 # Set PYTHONPATH and invoke luigi from venv to aggregate Artists
-PYTHONPATH='.' /home/ec2-user/venv/ec2-user/bin/luigi --module top_artists AggregateArtists --date-interval 2012-06
-PYTHONPATH='.' luigi --module top_artists Top10Artists --date-interval 2012-07
+su ec2-user -c "PYTHONPATH='.' /home/ec2-user/venv/ec2-user/bin/luigi --module top_artists AggregateArtists --date-interval 2012-06"
+su ec2-user -c "PYTHONPATH='.' luigi --module top_artists Top10Artists --date-interval 2012-07"
